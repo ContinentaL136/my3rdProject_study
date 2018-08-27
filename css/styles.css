@@ -1,0 +1,217 @@
+/* Подключение шрифтов */
+
+@font-face {
+  font-family: 'Proxima';
+  src: url('../fonts/ProximaNova-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima';
+  src: url('../fonts/ProximaNova-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima';
+  src: url('../fonts/ProximaNova-Black.woff') format('woff');
+  font-weight: normal;
+  font-style: black;
+}
+
+@font-face {
+  font-family: 'Proxima';
+  src: url('../fonts/ProximaNova-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pacifico';
+  src: url('../fonts/Pacifico.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Базовые настройки страницы */
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Proxima';
+    font-weight: 300;
+    line-height: 1.42;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Настройки первой страницы */
+
+.section__content {
+    display: flex;
+    justify-content: center;
+}
+
+.section--main {
+    background-image: url('../img/backgrounds/background-main.jpg');
+    background-size: cover;
+    padding-top: 55px;
+    height: 100vh;
+}
+
+.nav__link {
+    text-transform: uppercase;
+}
+
+.nav__item {
+    display: inline-block;
+}
+
+.lang__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav__link {
+    padding-left: 13px;
+    padding-right: 13px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav__link:hover {
+    color: #7d8bd6;
+    transition: .5s all ease-in-out;
+}
+
+/* Настройка меню смены языка */
+
+.lang {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin-right: 60px;
+    margin-top: -23px;
+}
+
+.lang__link {
+    color: #000000;
+}
+
+.lang__link:hover {
+    color: #7d8bd6;
+    transition: .5s all ease-in-out;
+}
+
+/* Стилизация главных надписей */
+
+.main {
+    text-align: center;
+    color: #000000;
+}
+
+.section__title {
+    font-family: 'Pacifico';
+    font-weight: 300;
+    font-size: 100px;
+    margin-top: 100px;
+}
+
+.section__subtitle {
+    font-size: 60px;
+    font-weight: normal;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section__text {
+    margin-top: 70px;
+    font-size: 19px;
+}
+
+/* Стилизация кнопки */
+
+.button {
+    color: #fff;
+    text-decoration: none;
+    line-height: 50px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    background-color: #7d8bd6;
+    padding: 20px 60px;
+    border-radius: 3px;
+}
+
+.section__button {
+    margin-top: 55px;
+}
+
+.section__button:hover .button {
+    background-color: #7d8bf1;
+    color: snow;
+    transition: .5s all ease-in-out;
+}
+
+/* Стилизация следующей страницы - интересные факты */
+
+.facts {
+    background-color: #fafafa;
+}
+
+.facts-main__text {
+    font-size: 16px;
+    line-height: 50px;
+    color: #7d8bd6;
+    padding-bottom: 100px;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+    padding-top: 130px;
+}
+
+.face-one {
+    margin-left: -150px;
+}
+
+.facts-results__title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.facts-results {
+    width: 500px;
+    display: inline-block;
+}
+
+.facts-specialization {
+    width: 586px;
+}
